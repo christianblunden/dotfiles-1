@@ -1,0 +1,8 @@
+set titlestring=""
+set editor='mvim -f +<line> +"sil! call cursor(0, <column>)" <file>'
+set guioptions+="T"
+hi CmdLine -a font-size:16px !important;
+hi CmdLine -a font-family:"Monaco" !important;
+hi StatusLine -a font-size:16px !important;
+hi StatusLine -a font-family:"Monaco" !important;
+hi FontFixed -a font-size:13px !important; font-family:"Monaco" !important;

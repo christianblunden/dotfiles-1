@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<root>
+  <devicevendordef>
+    <vendorname>KBT</vendorname>
+    <vendorid>0x04d9</vendorid>
+  </devicevendordef>
+    
+  <deviceproductdef>
+    <productname>KBT_PURE</productname>
+    <productid>0x0134</productid>
+  </deviceproductdef>
+    
+  <item>
+    <name>Backspace and slash in KBT_PURE</name>
+    <identifier>private.deviceproductdef</identifier>
+    <device_only>DeviceVendor::KBT, DeviceProduct::KBT_PURE</device_only>
+    <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::BACKSLASH</autogen>
+    <autogen>__KeyToKey__ KeyCode::BACKSLASH, KeyCode::DELETE</autogen>
+  </item>
+  
+  <item>
+    <name>emacs_arrows_up</name>
+    <appendix>Emacs Style Movement</appendix>
+    <identifier>private.emacs_up</identifier>
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::R,
+      ModifierFlag::CONTROL_L,
+      KeyCode::CURSOR_UP
+    </autogen>
+  </item>
+  <item>
+    <name>emacs_arrows_down</name>
+    <appendix>Emacs Style Movement</appendix>
+    <identifier>private.emacs_down</identifier>
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::L,
+      ModifierFlag::CONTROL_L,
+      KeyCode::CURSOR_DOWN
+    </autogen>
+  </item>
+  <item>
+    <name>emacs_arrows_left</name>
+    <appendix>Emacs Style Movement</appendix>
+    <identifier>private.emacs_left</identifier>
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::N,
+      ModifierFlag::CONTROL_L,
+      KeyCode::CURSOR_LEFT
+    </autogen>
+  </item>
+  <item>
+    <name>emacs_arrows_right</name>
+    <appendix>Emacs Style Movement</appendix>
+    <identifier>private.emacs_right</identifier>
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::Y,
+      ModifierFlag::CONTROL_L,
+      KeyCode::CURSOR_RIGHT
+    </autogen>
+  </item>
+</root>
