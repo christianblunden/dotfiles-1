@@ -33,7 +33,6 @@ set autoindent
 set smartindent
 
 "" Stuff
-set noesckeys
 set nobackup
 set nowb
 set noswapfile
@@ -60,5 +59,6 @@ set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.bundle,coverage,.DS_Store,_html,.git,*.rbc,*.class,.svn,vendor/gems/*,vendor/rails/*
 set cmdheight=2
 set laststatus=2
+set nofoldenable
 
 let g:ruby_path = system('echo $HOME/.rbenv/shims')
