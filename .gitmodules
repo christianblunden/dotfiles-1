@@ -55,6 +55,6 @@
 [submodule "vim/bundle/prolog"]
 	path = vim/bundle/prolog
 	url = https://github.com/adimit/prolog.vim.git
-[submodule "vim/bundle/fireplace"]
-	path = vim/bundle/fireplace
-	url = https://github.com/tpope/vim-fireplace.git
+[submodule "vim/bundle/nginx"]
+	path = vim/bundle/nginx
+	url = https://github.com/evanmiller/nginx-vim-syntax.git

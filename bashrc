@@ -17,3 +17,5 @@ export PATH="$PATH:$GOPATH/bin"
 export PGDATA=/usr/local/var/postgres
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+export KAFKA_HOME=$HOME/Code/kafka
