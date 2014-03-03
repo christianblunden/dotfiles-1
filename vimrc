@@ -10,3 +10,4 @@ source ~/.vim/scripts/nerdtree.vim
 source ~/.vim/scripts/clojure.vim
 source ~/.vim/scripts/ruby.vim
 source ~/.vim/scripts/erlang.vim
+source ~/.vim/scripts/filetypes.vim

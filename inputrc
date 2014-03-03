@@ -4,3 +4,4 @@ TAB: menu-complete
 "\e[Z": "\e-1\C-i"
 # Ignores the case of the letter
 set completion-ignore-case on
+set show-all-if-ambiguous on

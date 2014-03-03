@@ -11,7 +11,7 @@ fi
 export EDITOR=vim
 export NODENV_VERSION='v0.10'
 
-export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.bin:$PATH:$HOME/.cabal/bin"
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 export PGDATA=/usr/local/var/postgres
