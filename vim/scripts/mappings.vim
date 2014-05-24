@@ -3,11 +3,13 @@ let mapleader      = ","
 let maplocalleader = ","
 let g:mapleader    = ","
 
-" Quick access to test files
-map <leader>, :call Testing::AlternateFile()<cr>
-map <leader>t :call Testing::RunTests()<cr>
-map <leader>T :call Testing::RunNearestTest()<cr>
-map <leader>c :!bundle exec cucumber<cr>
+autocmd VimEnter,BufRead,BufNewFile *.rb call RubySetup()
+function RubySetup()
+  map <leader>, :call Testing::AlternateFile()<cr>
+  map <leader>t :call Testing::RunTests()<cr>
+  map <leader>T :call Testing::RunNearestTest()<cr>
+  map <leader>c :!bundle exec cucumber<cr>
+endfunction
 
 " Remove temptation of arrow keys
 " noremap <Up>       :echoerr "Use k instead!"<CR>
@@ -93,3 +95,5 @@ function! SelectaCommand(choice_command, selecta_args, vim_command)
   redraw!
   exec a:vim_command . " " . selection
 endfunction
+
+map ,<space> :CtrlP<cr>

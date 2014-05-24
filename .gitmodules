@@ -61,9 +61,33 @@
 [submodule "vim/bundle/puppet"]
 	path = vim/bundle/puppet
 	url = https://github.com/puppetlabs/puppet-syntax-vim.git
-[submodule "bash/fuzzy_completiion"]
-	path = bash/fuzzy_completiion
-	url = https://github.com/mgalgs/fuzzy_bash_completion.git
+[submodule "vim/bundle/clojure-static"]
+	path = vim/bundle/clojure-static
+	url = https://github.com/guns/vim-clojure-static.git
+[submodule "vim/bundle/classpath"]
+	path = vim/bundle/classpath
+	url = https://github.com/tpope/vim-classpath.git
 [submodule "bash/fuzzy_completion"]
 	path = bash/fuzzy_completion
 	url = https://github.com/mgalgs/fuzzy_bash_completion.git
+[submodule "vim/bundle/rainbow-parens"]
+	path = vim/bundle/rainbow-parens
+	url = https://github.com/kien/rainbow_parentheses.vim.git
+[submodule "vim/bundle/fireplace"]
+	path = vim/bundle/fireplace
+	url = https://github.com/tpope/vim-fireplace.git
+[submodule "vim/bundle/rainbow_parens"]
+	path = vim/bundle/rainbow_parens
+	url = https://github.com/kien/rainbow_parentheses.vim.git
+[submodule "vim/bundle/scss"]
+	path = vim/bundle/scss
+	url = https://github.com/cakebaker/scss-syntax.vim.git
+[submodule "vim/bundle/css3"]
+	path = vim/bundle/css3
+	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule "vim/bundle/javascript"]
+	path = vim/bundle/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim/bundle/exercism"]
+	path = vim/bundle/exercism
+	url = git@github.com:rsslldnphy/vim-exercism.git
