@@ -3,7 +3,7 @@ let mapleader      = ","
 let maplocalleader = ","
 let g:mapleader    = ","
 
-autocmd VimEnter,BufRead,BufNewFile *.rb call RubySetup()
+autocmd VimEnter,BufRead,BufNewFile *.rb,*.feature call RubySetup()
 function RubySetup()
   map <leader>, :call Testing::AlternateFile()<cr>
   map <leader>t :call Testing::RunTests()<cr>
@@ -78,22 +78,5 @@ command! Wa  :wa
 command! Wq  :wq
 command! Wqa :wqa
 command! E   :e
-
-map <leader>f :call SelectaCommand("find * -type f -o -path tmp -prune", "", ":e")<cr>
-
-" Run a given vim command on the results of fuzzy selecting from a given shell
-" command. See usage below.
-function! SelectaCommand(choice_command, selecta_args, vim_command)
-  try
-    silent let selection = system(a:choice_command . " | selecta " . a:selecta_args)
-  catch /Vim:Interrupt/
-    " Swallow the ^C so that the redraw below happens; otherwise there will be
-    " leftovers from selecta on the screen
-    redraw!
-    return
-  endtry
-  redraw!
-  exec a:vim_command . " " . selection
-endfunction
 
 map ,<space> :CtrlP<cr>

@@ -23,3 +23,5 @@ alias f='fab -f ~/Code/puppet/fabfile.py'
 alias fdocs='open https://github.com/uswitch/puppet/blob/master/fabricguide.md'
 alias please='sudo'
 alias quietly='ssh'
+alias bw='cd ~/Code/broadband-web'
+alias gin="git"

@@ -54,8 +54,9 @@ set incsearch
 set ignorecase
 
 "" Command mode
+cmap <m-bs> <c-w>
 set wildmenu
-set wildmode=list:longest,list:full
+" set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.bundle,coverage,.DS_Store,_html,.git,*.rbc,*.class,.svn,vendor/gems/*,vendor/rails/*
 set cmdheight=2
 set laststatus=2
